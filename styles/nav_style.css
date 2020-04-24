@@ -10,3 +10,8 @@
 #service{
     display: flex;
 }
+
+.active .nav-link{
+    text-decoration: underline;
+    text-underline-position: under;
+}
