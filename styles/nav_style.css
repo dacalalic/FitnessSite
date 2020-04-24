@@ -1,0 +1,12 @@
+.navbar-brand img{
+    height: 80px;
+    width: auto;
+}
+
+.collapse li{
+    margin-right: 10px;
+}
+
+#service{
+    display: flex;
+}
