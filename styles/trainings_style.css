@@ -1,0 +1,45 @@
+.card{
+    width: 90%;
+    margin-top: 10px;
+}
+
+h2{
+    color: rgb(255, 17, 0);
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+}
+
+.card-img{
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+}
+
+.card:hover{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1199px){
+    .card-img{
+        width: 100%;
+        height: 24vw;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .card-img{
+        width: 100%;
+        height: 35vw;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .card-img{
+        width: 100%;
+        height: 45vw;
+        object-fit: cover;
+    }
+}
