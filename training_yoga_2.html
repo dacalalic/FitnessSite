@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fitness/Index</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/nav_style.css">
+    <link rel="stylesheet" href="styles/training_spec_style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"
+        defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
+        defer></script>
+    <script src="script/training_spec.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="index-sr.html">
+                <img src="images/logo.png" alt="logo">
+                Fitness
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_coll">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="nav_coll">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-sr.html">Početna</a>
+                    </li>
+                    <li class="nav-item" id="service">
+                        <a class="nav-link" href="services-sr.html">
+                            Usluge
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light text-secondary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"></button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="trainings-sr.html">Treninzi</a>
+                                <a class="dropdown-item" href="nutritionist-sr.html">Nutricionista</a>
+                                <a class="dropdown-item" href="massage-sr.html">Masaže</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule-training-sr.html">Zakazivanje treninga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my-account-sr.html">Moj nalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">O nama</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-9 col-lg-4 col-xl-3">
+                <h2>Trening2</h2>
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-2 col-xl-1">
+                <p>
+                    Trajanje: 1.30h</br>
+                    Nivo: 5
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-9 col-lg-6 col-xl-4">
+                <p>
+                    Duzi opis:aaaa aa aa aaa aaaaaaaaaa aaaaaaaaa aaaaaa aaaa aaaaa aa aaaaa aaaaa aaaaaa aaaaa a a aa a
+                    a aaaaa
+                    aaaa aaa a aaaaaaa aaaaaa aaaaaaaaaa aaaa aaaa aaaaaaa aaaa aaa aaaaaaaaaa aaaaaaaaaaa aaaaaaaaa
+                    aaaaaa
+                    aaa aa aaaaa a aaaaa aaaaaaa aaaaaaa aaaaaaaa aaaaaa aaaaaaaa aaaaaaaa aaaaa aaa aaaaa aaaaa aaaa
+                    aaaaa aa
+                    aa a aaa aaa a aa aaaaaa aaaaaaaaa aaaaaa aaaaa aaaa aaaaaaaa aaaaaaa aaaaaaaa aaa aaa aaaaaa aaaaaa
+                    aaaaa a
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-9 col-lg-3 col-xl-2">
+                <div class="carousel slide" id="trainingImages" data-ride="carousel">
+                    <div class="carousel-inner" id="mainCar" data-target="#modal" data-toggle="modal">
+                        <div class="carousel-item active">
+                            <img src="images/slika1.png" alt="" class="d-block w-100" id="1" data-target="#mtrainingImages" data-slide-to="0">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slika2.png" alt="" class="d-block w-100" id="2" data-target="#mtrainingImages" data-slide-to="1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slika3.png" alt="" class="d-block w-100" id="3" data-target="#mtrainingImages" data-slide-to="2">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#trainingImages" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#trainingImages" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-3 col-xl-2 d-flex align-items-center">
+                <video src="videos/example.mp4" controls></video>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-9 col-lg-6 col-xl-4">
+                <form>
+                    <div class="form-group">
+                        <label for="comment">Komentar</label>
+                        <textarea class="form-control" name="comment" id="commentTA" rows="2"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary">Pošalji</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel slide" id="mtrainingImages" data-ride="carousel">
+                        <div class="carousel-inner" id="modalCar">
+                            <div class="carousel-item active">
+                                <img src="images/slika1.png" alt="" class="d-block w-100" id="m1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slika2.png" alt="" class="d-block w-100" id="m2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slika3.png" alt="" class="d-block w-100" id="m3">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#mtrainingImages" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mtrainingImages" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a id="center">
+                Copyright &#169; 2020, &nbsp;Lalić Danilo & Labović Božo, &nbsp;Odsek za softversko inženjerstvo
+                Elektrotehničkog fakulteta
+                Univerziteta u Beogradu
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
