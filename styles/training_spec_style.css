@@ -44,6 +44,10 @@ video{
     margin-bottom: 15px;
 }
 
+#commentsBtn{
+    margin: 15px;
+}
+
 @media only screen and (max-width: 1199px){
     #mainCar .carousel-item img{
         width: 100%;
