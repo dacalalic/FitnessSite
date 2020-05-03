@@ -1,71 +1,200 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Fitness/Index</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/nav_style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"
-        defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
-        defer></script>
-</head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="index-sr.html">
-                <img src="images/logo.png" alt="logo">
-                Fitness
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_coll">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="nav_coll">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index-sr.html">Početna</a>
-                    </li>
-                    <li class="nav-item" id="service">
-                        <a class="nav-link" href="services-sr.html">
-                            Usluge
-                        </a>
-                        <div class="dropdown">
-                            <button class="btn btn-outline-light text-secondary dropdown-toggle dropdown-toggle-split"
-                                data-toggle="dropdown"></button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="trainings-sr.html">Treninzi</a>
-                                <a class="dropdown-item" href="nutritionist-sr.html">Nutricionista</a>
-                                <a class="dropdown-item" href="massage-sr.html">Masaže</a>
+    <head>
+        <title>Fitness/Index</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="shortcut icon" href="images/ikonica.ico">
+        <link rel="stylesheet" href="styles/nav_style.css">
+        <link rel="stylesheet" href="styles/about-us.css">
+        <script src="script/about-us.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="C:\Users\HP\Desktop\kokoko\FitnessSite\jspdf.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" defer></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+        <script async defer src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap"></script>
+    </head>
+    <body onload="initMap()">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a class="navbar-brand" href="index-sr.html">
+                    <img src="images/logo.png" alt="logo">
+                    Fitness
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_coll">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="nav_coll">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index-sr.html">Početna</a>
+                        </li>
+                        <li class="nav-item" id="service">
+                            <a class="nav-link" href="services-sr.html">
+                                Usluge
+                            </a>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-light text-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="trainings-sr.html">Treninzi</a>
+                                    <a class="dropdown-item" href="nutritionist-sr.html">Nutricionista</a>
+                                    <a class="dropdown-item" href="massage-sr.html">Masaže</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="schedule-training-sr.html">Zakazivanje treninga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="my-account-sr.html">Moj nalog</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about-us.html">O nama</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+                <div class="container-fluid">
+                    <div class="row">
+                        
+                        <div class="tradition">
+                        <div class="col-sm-12">
+                           
+                             <h2><u>14 godina tradicije </u></h2>
+                            Fitness klub "FitnessCentar" je oformljen 2006. godine. Na samom početku rada, klub je radio kao sekcija
+                            za aerobik i body building, a od 20. juna 2008. godine kao samostalni sportski klub.Naš tim svake godine 
+                            osvaja nagrade koje dokazuju da smo u samom vrhu.Drugu godinu za redom 
+                            osvajamo nagradu za najopremljeniju teretanu u gradu Beogradu,a ove godine smo postali i najbolja teretana
+                            u našem gradu.
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="schedule-training-sr.html">Zakazivanje treninga</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="my-account-sr.html">Moj nalog</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about-us.html">O nama</a>
-                    </li>
-                </ul>
+                    </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Naš tim</h1>
+                        <div class="row">
+                            <a style="padding: 0.5cm 1cm;">
+                                Naši treneri su obrazovani studenti i profesori sa Fakulteta sporta i fizičkog vaspitanja,
+                                kao i sa strane Medicinskog fakulteta. Usmereni su na rad sa rekreativcima, sportistima, 
+                                osobama sa povišenim pritiskom, osobama sa dijabetesom, osobama sa problemima kardiorespiratorne forme,
+                                 osobama sa deformitetima kičmenog stuba i ekstremiteta itd.
+                                Bilo koji problem da imate, naši treneri su tu da vam maksimalno pomognu da dođete do željenog cilja.
+                            </a>
+                            <div class="col-sm-4">
+                                <div class="coach">
+                           
+                                <img src="images/nemanja.jpg" width="80%" height="250px"> <br/>
+                                <a>Nemanja Miodragović</a>
+                                <br/>
+                                Profesor fizičkog vaspitanja, diplomirani kinezioterapeut, personalni fitnes trener, kao i instruktor plivanja.
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="coach">
+                           
+                                <img src="images/jovica.jpg" width="80%" height="250px"> <br/>
+                                <a>Jovica Kovačević</a>
+                                <br/>
+                                Menadžer našeg Fitness club-a. Diplomirani profesor sporta i fizičkog vaspitanja. 
+                                Licencirani trener, grupni trener, LesMills instructor.
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="coach">
+                                <img src="images/milos.jpg" width="80%" height="250px">  <br/>
+                                <a>Miloš Aleksić</a>
+                                <br/>
+                                Diplomirani profesor sporta i fizičkog vaspitanja, licencirani personalni i funkcionalni trener.
+                            </div>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                 <div class = "row">
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="images/bakaprase.jpg">
+                        </div>
+                        <div class="content">
+                            <h2>Baka Prase</h2>
+                            <p>Jako je važno voditi računa o svom zdravlju a i izgledu.Zato je moj izbor za treninge
+                                ova teretana.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="images/dabovic.jpg">
+                        </div>
+                        <div class="content">
+                            <h2>Milica Dabović</h2>
+                            <p>Funkcionalni centar,najmodernija oprema,fantastični stručnjaci - jednom rečju ova teretana.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="images/sloba.png">
+                        </div>
+                        <div class="content">
+                            <h2>Sloba Radanović</h2>
+                            <p>Volim da svoje slobodno vreme iskoristim na najbolji mogući način,zato je ovo moj izbor.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="images/ivana.jpg">
+                        </div>
+                        <div class="content">
+                            <h2>Ivana Španović</h2>
+                            <p>Pravo mesto za mene i moje treninge.U kvalitet opreme
+                                i stručnost celokupnog osoblja dodjite i uverite se sami.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="images/bogdan.PNG">
+                        </div>
+                        <div class="content">
+                            <h2>Bogdan Bogdanović</h2>
+                            <p>Kao profesionalnom sportisti,neophodni su mi profesionalni treneri i uslovi.A to upravo
+                                ovaj FitnessCentar i pruža.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-12">
+                        <i class="fa fa-whatsapp icon"></i> 
+                        <a href="wa.link/22gr5b">+3816012345678</a> 
+                        <i class="fa fa-instagram icon"></i>    
+                        <a href="instagram.com/fitnesscentar">instagram/FitnessCentar</a>
+                        <i class="fa fa-facebook icon"></i>
+                        <a href="facebook.com/fitnesscentar">facebook/FitnessCentar</a>                   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                    <h1>Potražite nas na ovoj adresi <i class="fa fa-arrow-down icon"></i></h1> 
+                </div>
+                <div class="row">   
+                <div class="col-sm-3">
             </div>
-        </nav>
-    </header>
-    <footer>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="col-sm-6">
+                <div id="map"></div>
+                </div> 
+                <div class="col-sm-3">
+            </div> 
+            </div> 
+                </div>
+                </div>
+        <footer>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a id="center">
-                Copyright &#169; 2020, &nbsp;Lalić Danilo & Labović Božo, &nbsp;Odsek za softversko inženjerstvo
-                Elektrotehničkog fakulteta
+                Copyright &#169; 2020, &nbsp;Lalić Danilo & Labović Božo, &nbsp;Odsek za softversko inženjerstvo Elektrotehničkog fakulteta
                 Univerziteta u Beogradu
             </a>
-        </nav>
-    </footer>
-</body>
-
+            </nav>
+        </footer>
+    </body>
 </html>

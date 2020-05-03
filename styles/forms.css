@@ -1,0 +1,70 @@
+.form-box{
+    background: rgb(135,206,250);
+    margin: 4cm auto;
+    padding: 50px 0;
+    color: #fff;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 5);
+    padding: 1.5cm;
+}
+body {
+    background: linear-gradient(rgb(0, 162, 255),silver,rgb(0, 162, 255),silver,rgb(0, 162, 255),silver,rgb(0, 162, 255));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+.input-box{
+    margin: 12px ;
+    border-bottom: 2px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+span{
+    color: red;
+    padding-top: 0cm;
+}
+.error{
+    width: 100%;
+    height: 100px;
+}
+.input-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color : black;    
+}
+::placeholder{
+    color: silver;
+}
+.button_1{
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid white;
+    cursor: pointer;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: rgb(135,206,250);
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }

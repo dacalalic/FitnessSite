@@ -1,0 +1,158 @@
+.container-fluid
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.container-fluid .box
+{
+	position: relative;
+	width: 220px;
+	height: 384px;
+	margin: 20px 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.container-fluid .box .imgBx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	clip-path: circle(400px at center 100px);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+.container-fluid .box:hover .imgBx
+{
+	clip-path: circle(80px at center 100px);
+	transition-delay: 0s;
+}
+.container-fluid .box .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container-fluid .box .content
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 55%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.tradition{
+
+	width: 100%;
+	height: 200px;
+	background-color: rgb(135,206,250);
+}
+
+.coach{
+	width: 100%;
+	height: 350px;
+	text-align: center;
+}
+
+.coach h1{
+	color: green;
+}
+
+.coach a{
+	color: red;
+	text-align: center;
+	font-size: 20pt;
+}
+
+.tradition h2{
+	color: gold;
+	font-size: 50pt;
+	font-style: italic;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-fluid .box .content h2
+{
+	margin: 0;
+	padding: 0;
+}
+.container-fluid .box .content a
+{
+	text-decoration: none;
+	background: #000;
+	color: #fff;
+	padding: 5px;
+	display: inline-block;
+}
+.container-fluid .box .content h2,
+.container-fluid .box .content p,
+.container-fluid .box .content a
+{
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(20px);
+}
+.container-fluid .box:hover .content h2
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.5s
+}
+.container-fluid .box:hover .content p
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.7s
+}
+.container-fluid .box:hover .content a
+{
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.9s
+}
+#map { 
+	height: 360px; 
+	width: 780px; 
+   } 
+
+   .input-container-fluid {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: white;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+  }
+
+  a:link{
+	  color: black;
+  }
+
+  a:link:hover{
+	  color:rgb(135,206,250);
+  }
+
+  h1{
+	  font-size: 20pt;
+	  font-family: sans-serif;
+	  font-style: oblique;
+	  text-align: center;
+  }
