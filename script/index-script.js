@@ -69,21 +69,21 @@ if (!trainings) {
             type: "Cardio",
             title: "Trčanje",
             image: "images/slika1.png",
-            link: "training_core_1.html",
+            link: "training_cardio_1.html",
             avgMark: 0
         },
         {
             type: "Cardio",
             title: "Vožnja bicikla",
             image: "images/slika2.png",
-            link: "training_core_2.html",
+            link: "training_cardio_2.html",
             avgMark: 0
         },
         {
             type: "Cardio",
             title: "HIIT",
             image: "images/slika3.png",
-            link: "training_core_3.html",
+            link: "training_cardio_3.html",
             avgMark: 0
         },
     ];

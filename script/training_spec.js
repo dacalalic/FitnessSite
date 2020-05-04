@@ -48,7 +48,8 @@ function addMark() {
 
     let type;
     let trNum;
-    let docName = document.URL;
+    let docNameArr = document.URL.split("/");
+    let docName = docNameArr[docNameArr.length - 1];
 
     type = findType(docName);
     trNum = findTrNum(docName);
@@ -79,8 +80,10 @@ let com = localStorage.getItem("comments");
 if (com) {
     com = JSON.parse(com);
 
-    let type = findType(document.URL);
-    let trNum = findTrNum(document.URL);
+    let docNameArr = document.URL.split("/");
+    let docName = docNameArr[docNameArr.length - 1];
+    let type = findType(docName);
+    let trNum = findTrNum(docName);
     com = com[type][trNum];
 
     com.forEach(function (item) {
@@ -92,7 +95,8 @@ if (com) {
 let m = localStorage.getItem("marks");
 if (m) {
     m = JSON.parse(m);
-    let docName = document.URL;
+    let docNameArr = document.URL.split("/");
+    let docName = docNameArr[docNameArr.length - 1];
     let type = findType(docName);
     let trNum = findTrNum(docName);
 

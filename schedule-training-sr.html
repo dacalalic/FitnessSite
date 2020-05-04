@@ -1,54 +1,544 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Fitness/Index</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/nav_style.css">
-        <link rel="shortcut icon" href="images/ikonica.ico">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" defer></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <a class="navbar-brand" href="index-sr.html">
-                    <img src="images/logo.png" alt="logo">
-                    Fitness
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_coll">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="nav_coll">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index-sr.html">Početna</a>
-                        </li>
-                        <li class="nav-item" id="service">
-                            <a class="nav-link" href="services-sr.html">
-                                Usluge
-                            </a>
-                            <div class="dropdown">
-                                <button class="btn btn-outline-light text-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="trainings-sr.html">Treninzi</a>
-                                    <a class="dropdown-item" href="nutritionist-sr.html">Nutricionista</a>
-                                    <a class="dropdown-item" href="massage-sr.html">Masaže</a>
-                                </div>
+
+<head>
+    <title>Fitness/Index</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/nav_style.css">
+    <link rel="shortcut icon" href="images/ikonica.ico">
+    <link rel="stylesheet" href="styles/spec_tr_style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"
+        defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
+        defer></script>
+    <script src="script/schedule_tr_script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="index-sr.html">
+                <img src="images/logo.png" alt="logo">
+                Fitness
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_coll">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="nav_coll">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-sr.html">Početna</a>
+                    </li>
+                    <li class="nav-item" id="service">
+                        <a class="nav-link" href="services-sr.html">
+                            Usluge
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light text-secondary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown"></button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="trainings-sr.html">Treninzi</a>
+                                <a class="dropdown-item" href="nutritionist-sr.html">Nutricionista</a>
+                                <a class="dropdown-item" href="massage-sr.html">Masaže</a>
                             </div>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="schedule-training-sr.html">Zakazivanje treninga</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="my-account-sr.html">Moj nalog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">O nama</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="schedule-training-sr.html">Zakazivanje treninga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my-account-sr.html">Moj nalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">O nama</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-3 col-xl-2">
+                <h3>Izaberite tip treninga:</h3>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trType" id="yoga" value="yoga" autocomplete="off">
+                    <label for="yoga" class="form-check-label">Yoga</label>
                 </div>
-            </nav>
-        </header>
-    </body>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trType" id="pilates" value="pilates" autocomplete="off">
+                    <label for="pilates" class="form-check-label">Pilates</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trType" id="core" value="core" autocomplete="off">
+                    <label for="core" class="form-check-label">Core</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trType" id="cardio" value="cardio" autocomplete="off">
+                    <label for="cardio" class="form-check-label">Cardio</label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-7 col-xl-5">
+                <div class="media yogaTr">
+                    <img src="images/slika1.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#yoga1" data-toggle="collapse">Hatha</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="yoga1">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="1">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="2">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="3">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media yogaTr">
+                    <img src="images/slika2.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#yoga2" data-toggle="collapse">Iyengar</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="yoga2">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="4">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="5">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="6">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media yogaTr">
+                    <img src="images/slika3.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#yoga3" data-toggle="collapse">Kundalini</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="yoga3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="7">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="8">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="9">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media pilatesTr">
+                    <img src="images/slika1.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#pilates1" data-toggle="collapse">Reformer</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="pilates1">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="10">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="11">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="12">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media pilatesTr">
+                    <img src="images/slika2.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#pilates2" data-toggle="collapse">Klinički</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="pilates2">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="13">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="14">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="15">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media pilatesTr">
+                    <img src="images/slika3.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#pilates3" data-toggle="collapse">Klasični</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="pilates3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="16">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="17">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="18">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media coreTr">
+                    <img src="images/slika1.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#core1" data-toggle="collapse">Početni</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="core1">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="19">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="20">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="21">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media coreTr">
+                    <img src="images/slika2.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#core2" data-toggle="collapse">Srednji</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="core2">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="22">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="23">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="24">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media coreTr">
+                    <img src="images/slika3.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#core3" data-toggle="collapse">Napredni</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="core3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="25">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="26">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="27">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media cardioTr">
+                    <img src="images/slika1.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#cardio1" data-toggle="collapse">Trčanje</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="cardio1">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="28">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="29">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="30">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media cardioTr">
+                    <img src="images/slika2.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#cardio2" data-toggle="collapse">Vožnja bicikla</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="cardio2">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="31">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="32">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="33">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media cardioTr">
+                    <img src="images/slika3.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="#cardio3" data-toggle="collapse">HIIT</a></h2>
+                        <p>Kratak opis ovog treninga.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="cardio3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: ponedeljak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="34">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: sreda 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="35">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Datum i vreme: petak 10.30č.</p>
+                            <span>Broj slobodnih mesta: </span>
+                            <span></span>
+                            <button class="btn btn-primary resBtn" type="button" id="36">Rezerviši</button>
+                            <span class="text-success">Rezervisano</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a id="center">
+                Copyright &#169; 2020, &nbsp;Lalić Danilo & Labović Božo, &nbsp;Odsek za softversko inženjerstvo
+                Elektrotehničkog fakulteta
+                Univerziteta u Beogradu
+            </a>
+        </nav>
+    </footer>
+</body>
+
 </html>
