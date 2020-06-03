@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Fitness/Trainings</title>
+    <title>Fitness/Pilates</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/nav_style.css">
-	 <link rel="shortcut icon" href="images/ikonica.ico">
-    <link rel="stylesheet" href="styles/trainings_style.css">
+    <link rel="shortcut icon" href="images/ikonica.ico">
+    <link rel="stylesheet" href="styles/spec_tr_style.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -27,37 +26,36 @@
                 <img src="images/workout.png" alt="logo">
                 <div class="versus"> VERSUS </div> 
                 FITNESS
-               </a>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_coll">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="nav_coll">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index-sr.html">Početna</a>
+                        <a class="nav-link" href="index-sr.html">Home</a>
                     </li>
                     <li class="nav-item" id="service">
-                        <a class="nav-link" href="services-sr.html">
-                            Usluge
+                        <a class="nav-link" href="services-eng.html">
+                            Services
                         </a>
                         <div class="dropdown">
-                            <button class="btn btn-outline-light text-secondary dropdown-toggle dropdown-toggle-split"
-                                data-toggle="dropdown"></button>
+                            <button class="btn btn-outline-light text-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
                             <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item active" href="trainings-sr.html">Treninzi</a>
-                                <a class="dropdown-item" href="nutritionist-sr.html">Nutricionista</a>
-                                <a class="dropdown-item" href="massage-sr.html">Masaže</a>
+                                <a class="dropdown-item" href="trainings-eng.html">Trainings</a>
+                                <a class="dropdown-item" href="nutritionist-eng.html">Nutritionist</a>
+                                <a class="dropdown-item" href="massage-eng.html">Massage</a>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="schedule-training-sr.html">Zakazivanje treninga</a>
+                        <a class="nav-link" href="schedule-training-eng.html">Scheduling training</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="my-account-sr.html">Moj nalog</a>
+                        <a class="nav-link" href="my-account-eng.html">My profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">O nama</a>
+                        <a class="nav-link" href="about-us-eng.html">About us</a>
                     </li>
                 </ul>
             </div>
@@ -69,14 +67,18 @@
             <div class="col-sm-10">
                 <div class="wrapper">
                     <ul>
-                       <li><a href="services-sr.html">
+                       <li><a href="services-eng.html">
                         <i class="fa fa-cogs icon"></i>
-                         <p>Usluge</p>
+                        <p>Services</p>
                          </a></li>
-                         <li><a href="trainings-sr.html">
-                         <img class="icon" src="images/dumbell.png">
-                         <p>Treninzi</p>
+                         <li><a href="trainings-eng.html">
+                            <img class="icon" src="images/dumbell.png">
+                         <p>Trainings</p>
                          </a></li>
+                         <li><a href="pilates-eng.html">
+                         <img class="icon" src="images/pilates.png">
+                         <p>Pilates</p>
+                         </a></li>  
                     </ul>
                 </div>
             </div>
@@ -84,51 +86,42 @@
                 <form name="language" method="POST">
                 <span class="srb">SRB</span>
                 <img src="images/serbia.png" style="width: 50px; height: 50px;">
-                <input type="checkbox" id="checkiran" class="check" onchange="change(1)">
+                <input type="checkbox" id="checkiran" class="check" checked="save(1)" onchange="change(0)">
                 <img src="images/uk.PNG"  style="width: 50px; height: 40px;">  
                 <span class="en">ENG</span>
                 </form>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-8 col-lg-5 col-xl-2 d-flex justify-content-center">
-                <div class="card">
-                    <img class="card-img" src="images/yoga.jpg" alt="">
-                    <a href="yoga-sr.html">
-                        <div class="card-img-overlay">
-                            <h2>Yoga</h2>
+            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+                <div class="media">
+                        <img src="images/slika1.png" alt="">
+                        <div class="media-body border-top border-bottom border-danger">
+                            <h2><a href="training_pilates_1.html">Reformer</a></h2>
+                            <p>A short description of this training.</p>
                         </div>
-                    </a>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-8 col-lg-5 col-xl-2 d-flex justify-content-center">
-                <div class="card">
-                    <img class="card-img" src="images/pilates.jpg" alt="">
-                    <a href="pilates-sr.html">
-                        <div class="card-img-overlay">
-                            <h2>Pilates</h2>
-                        </div>
-                    </a>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+                <div class="media">
+                    <img src="images/slika2.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="training_pilates_2.html">Clinical</a></h2>
+                        <p>A short description of this training.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-8 col-lg-5 col-xl-2 d-flex justify-content-center">
-                <div class="card">
-                    <img class="card-img" src="images/core.jpg" alt="">
-                    <a href="core-sr.html">
-                        <div class="card-img-overlay">
-                            <h2>Core</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-8 col-lg-5 col-xl-2 d-flex justify-content-center">
-                <div class="card">
-                    <img class="card-img" src="images/cardio.jpg" alt="">
-                    <a href="cardio-sr.html">
-                        <div class="card-img-overlay">
-                            <h2>Cardio</h2>
-                        </div>
-                    </a>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+                <div class="media">
+                    <img src="images/slika3.png" alt="">
+                    <div class="media-body border-top border-bottom border-danger">
+                        <h2><a href="training_pilates_3.html">Classic</a></h2>
+                        <p>A short description of this training.</p>
+                    </div>
                 </div>
             </div>
         </div>

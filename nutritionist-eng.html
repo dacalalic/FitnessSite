@@ -22,36 +22,36 @@
                     <img src="images/workout.png" alt="logo">
                     <div class="versus"> VERSUS </div> 
                     FITNESS
-                   </a>
+                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_coll">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="nav_coll">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index-sr.html">Početna</a>
+                            <a class="nav-link" href="index-sr.html">Home</a>
                         </li>
                         <li class="nav-item" id="service">
-                            <a class="nav-link" href="services-sr.html">
-                                Usluge
+                            <a class="nav-link" href="services-eng.html">
+                                Services
                             </a>
                             <div class="dropdown">
                                 <button class="btn btn-outline-light text-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="trainings-sr.html">Treninzi</a>
-                                    <a class="dropdown-item active" href="nutritionist-sr.html">Nutricionista</a>
-                                    <a class="dropdown-item" href="massage-sr.html">Masaže</a>
+                                    <a class="dropdown-item" href="trainings-eng.html">Trainings</a>
+                                    <a class="dropdown-item active" href="nutritionist-eng.html">Nutritionist</a>
+                                    <a class="dropdown-item" href="massage-eng.html">Massage</a>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="schedule-training-sr.html">Zakazivanje treninga</a>
+                            <a class="nav-link" href="schedule-training-eng.html">Scheduling training</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="my-account-sr.html">Moj nalog</a>
+                            <a class="nav-link" href="my-account-eng.html">My profile</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">O nama</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about-us-eng.html">About us</a>
                         </li>
                     </ul>
                 </div>
@@ -62,13 +62,13 @@
                 <div class="col-sm-10">
                     <div class="wrapper">
                         <ul>
-                           <li><a href="services-sr.html">
+                           <li><a href="services-eng.html">
                             <i class="fa fa-cogs icon"></i>
-                            <p>Usluge</p>
+                            <p>Services</p>
                              </a></li>
-                             <li><a href="nutritionist-sr.html">
+                             <li><a href="nutritionist-eng.html">
                                 <img class="icon" src="images/plan.png">
-                                <p>Nutricionista</p>
+                                <p>Nutritionist</p>
                              </a></li>  
                         </ul>
                     </div>
@@ -77,13 +77,13 @@
                     <form name="language" method="POST">
                     <span class="srb">SRB</span>
                     <img src="images/serbia.png" style="width: 50px; height: 50px;">
-                    <input type="checkbox" id="checkiran" class="check" onchange="change(1)">
+                    <input type="checkbox" id="checkiran" class="check" checked="save(1)" onchange="change(0)">
                     <img src="images/uk.PNG"  style="width: 50px; height: 40px;">  
                     <span class="en">ENG</span>
                     </form>
                 </div>
             </div>
-        <div class="forma">   
+        <div class="forma">
         <div class="row">
         <div class ="col-sm-2">
         </div>
@@ -91,13 +91,13 @@
         <form class = "form-box" name="nutri_form" method="POST" action="">
             <div class="row">
             <div class ="col-sm-12">
-            <h1>Nutricionista</h1>
+            <h1>Nutritionist</h1>
             </div>
             </div>
             <div class="row">
             <div class ="col-sm-6">
             <i class="fa fa-user icon1"></i>
-            Ime : 
+            Name : 
             <div class="error">
             <input class="input-box" type="text" name="name" placeholder="Petar">
             <br/>
@@ -106,7 +106,7 @@
             </div>
             <div class ="col-sm-6">
             <i class="fa fa-user icon1"></i>
-            Prezime : 
+            Surname : 
             <div class="error">
             <input class="input-box" type="text" name="surname" placeholder="Perić">
             <br/>
@@ -126,7 +126,7 @@
             </div>
             <div class="col-sm-4">
             <i class="fa fa-calendar icon1"></i> 
-            Datum :
+            Date :
             <div class="error">
             <input class="input-box" type="date" name="date">
             <br/>
@@ -135,7 +135,7 @@
             </div>
             <div class ="col-sm-4">
             <i class="fa fa-phone icon1"></i>
-            Telefon :
+            Phone :
             <div class="error">
             <input class="input-box" type="tel" name="number" placeholder="+381601234567">
             <br/>
@@ -151,7 +151,7 @@
             <div class="row">
             <div class ="col-sm-12">
             <i class="fa fa-comment icon1"></i>
-            Opis problema :
+            Problem description :
             <div class="error">
             <textarea cols="50" rows="4" name="problem" style="width: 100%;">
             </textarea>

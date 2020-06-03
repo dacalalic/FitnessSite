@@ -2,27 +2,31 @@
 <html>
 
 <head>
-    <title>Fitness/Index</title>
+    <title>Fitness/Pilates</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/nav_style.css">
     <link rel="shortcut icon" href="images/ikonica.ico">
     <link rel="stylesheet" href="styles/spec_tr_style.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"
         defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
         defer></script>
+        <script src="script/language.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="index-sr.html">
-                <img src="images/logo.png" alt="logo">
-                Fitness
+                <img src="images/workout.png" alt="logo">
+                <div class="versus"> VERSUS </div> 
+                FITNESS
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_coll">
                 <span class="navbar-toggler-icon"></span>
@@ -61,6 +65,35 @@
     </header>
 
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="wrapper">
+                    <ul>
+                       <li><a href="services-sr.html">
+                        <i class="fa fa-cogs icon"></i>
+                        <p>Usluge</p>
+                         </a></li>
+                         <li><a href="trainings-sr.html">
+                            <img class="icon" src="images/dumbell.png">
+                         <p>Treninzi</p>
+                         </a></li>
+                         <li><a href="pilates-sr.html">
+                         <img class="icon" src="images/pilates.png">
+                         <p>Pilates</p>
+                         </a></li>  
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <form name="language" method="POST">
+                <span class="srb">SRB</span>
+                <img src="images/serbia.png" style="width: 50px; height: 50px;">
+                <input type="checkbox" id="checkiran" class="check" onchange="change(1)">
+                <img src="images/uk.PNG"  style="width: 50px; height: 40px;">  
+                <span class="en">ENG</span>
+                </form>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
                 <div class="media">

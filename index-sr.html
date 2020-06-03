@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/nav_style.css">
     <link rel="stylesheet" href="styles/index_style.css">
     <link rel="shortcut icon" href="images/ikonica.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"
         defer></script>
@@ -16,14 +18,16 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
         defer></script>
     <script src="script/index-script.js" defer></script>
-</head>
+    <script src="script/language.js" defer></script>
 
+</head>
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="index-sr.html">
-                <img src="images/logo.png" alt="logo">
-                Fitness
+                <img src="images/workout.png" alt="logo">
+                <div class="versus"> VERSUS </div> 
+                FITNESS
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_coll">
                 <span class="navbar-toggler-icon"></span>
@@ -60,8 +64,37 @@
             </div>
         </nav>
     </header>
-
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="wrapper">
+ <ul>
+    <li><a href="index-sr.html">
+      <i class="fa fa-home icon"></i>
+      <p>Home</p>
+      </a></li>
+  </ul>
+</div>
+
+            </div>
+            <div class="col-sm-3" style="text-align:right">
+                <form name="language" method="POST">
+                <span class="srb">SRB</span>
+                <img src="images/serbia.png" style="width: 50px; height: 50px;">
+                <input type="checkbox" id="checkiran" class="check" onchange="change(1)">
+                <img src="images/uk.PNG"  style="width: 50px; height: 40px;">  
+                <span class="en">ENG</span>
+                </form>
+            </div>
+            <script>
+                function change(){
+                var checkbox = document.getElementById("checkiran");
+                if (checkbox.checked == true) 
+                window.location.href = "about-us-eng.html";
+                else window.location.href = "about-us.html";
+                } 
+             </script>
+        </div>
         <div class="row">
             <div class="col-12">
                 <div class="carousel slide" data-ride="carousel">
