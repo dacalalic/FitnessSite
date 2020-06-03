@@ -134,7 +134,7 @@
     margin-bottom: 15px;
   }
   
-  .icon {
+  .icon1 {
     padding: 10px;
     background: white;
     color: black;
@@ -156,3 +156,8 @@
 	  font-style: oblique;
 	  text-align: center;
   }
+
+.language{
+	align-items: flex-end;
+}
+  
