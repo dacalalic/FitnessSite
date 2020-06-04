@@ -140,7 +140,6 @@ function goNutri(){
 }
 
 function goMassage(){
-    alert("ookok");
     var doc1 = new jsPDF({
         orientation: 'landscape'
     });

@@ -65,27 +65,22 @@
     </header>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-10">
-                <div class="wrapper">
-                    <ul>
-                       <li><a href="services-sr.html">
-                        <i class="fa fa-cogs icon"></i>
-                         <p>Usluge</p>
-                         </a></li>
-                         <li><a href="trainings-sr.html">
-                         <img class="icon" src="images/dumbell.png">
-                         <p>Treninzi</p>
-                         </a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="row" style="padding-top: 0.3cm; padding-left: 0.3cm;">
             <div class="col-sm-2">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="services-sr.html">Usluge</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Treninzi</li>
+                    </ol>
+                  </nav>
+            </div>
+            <div class="col-sm-7">
+            </div>
+            <div class="col-sm-3" style="text-align: right; padding-right: 1cm ;">
                 <form name="language" method="POST">
                 <span class="srb">SRB</span>
-                <img src="images/serbia.png" style="width: 50px; height: 50px;">
-                <input type="checkbox" id="checkiran" class="check" onchange="change(1)">
-                <img src="images/uk.PNG"  style="width: 50px; height: 40px;">  
+                <a href="trainings-sr.html"><img src="images/serbia.png" style="width: 50px; height: 50px;"></a>
+                <a href="trainings-eng.html"><img src="images/uk.PNG"  style="width: 50px; height: 40px;"></a>  
                 <span class="en">ENG</span>
                 </form>
             </div>
