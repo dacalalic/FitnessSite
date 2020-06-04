@@ -7,21 +7,72 @@
     margin-right: 10px;
 }
 
+#service{
+    display: flex;
+}
 #center{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
-
-#service{
-    display: flex;
-}
-
 .active .nav-link{
     text-decoration: underline;
     text-underline-position: under;
 }
 
-
 footer{
     margin-top: 10px;
+}
+
+
+.en{
+    color: #333;
+}
+
+.srb{
+    color: #333;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check:before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check:checked:before{
+    color: #00a1ff;
+}
+
+.check:after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+    background-color: #00a1ff;
+}
+
+.versus{
+    display: inline;
+    font-size: xx-large;
+    font-style: oblique;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightskyblue;    
 }
