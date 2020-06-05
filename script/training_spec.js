@@ -56,10 +56,14 @@ function addMark() {
 
     marks[type][trNum][mark - 1]++;
 
+
+    let strings = new Array(2);
+    setMarkStrings(strings);
+
     let avgMark = findAverageMark(marks[type][trNum]);
 
     localStorage.setItem("marks", JSON.stringify(marks));
-    $("#markText").text("Ocena: " + avgMark);
+    $("#markText").text(strings[0] + avgMark);
 
     let trainings = localStorage.getItem("trainings");
     trainings = JSON.parse(trainings);
@@ -100,16 +104,19 @@ if (m) {
     let type = findType(docName);
     let trNum = findTrNum(docName);
 
+    let strings = new Array(2);
+    setMarkStrings(strings);
+
     let avgMark = findAverageMark(m[type][trNum]);
     if (avgMark !== 0) {
-        $("#markText").text("Ocena: " + avgMark);
+        $("#markText").text(strings[0] + avgMark);
     }
     else {
-        $("#markText").text("Ocena: nema podataka");
+        $("#markText").text(strings[0] + strings[1]);
     }
 }
 else {
-    $("#markText").text("Ocena: nema podataka");
+    $("#markText").text(strings[0] + strings[1]);
 }
 
 function findAverageMark(marks) {
@@ -155,4 +162,15 @@ function findTrNum(docName) {
 
 function comp(a, b) {
     return b.avgMark - a.avgMark;
+}
+
+function setMarkStrings(strings){
+    if(document.URL.includes("eng.html")){
+        strings[0] = "Rating: ";
+        strings[1] = "no data yet";
+    }
+    else{
+        strings[0] = "Ocena: ";
+        strings[1] = "nema podataka";
+    }
 }

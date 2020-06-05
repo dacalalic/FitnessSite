@@ -14,6 +14,13 @@ if (!locAppointment) {
 }
 else {
     locAppointment = JSON.parse(locAppointment);
+    let initDate = new Date();
+    for(let i = 0; i < locAppointment.length; i++){
+        if(locAppointment[i].timeDate <= initDate){
+            locAppointment[i].timeDate = initDate;
+            locAppointment[i].freeNum = 10;
+        }
+    }
 }
 
 for (let i = 0; i < locAppointment.length; i++) {
@@ -31,6 +38,10 @@ else {
 
 for (let i = 0; i < sessAppointment.length; i++) {
     $("#" + (sessAppointment[i] + 1)).hide();
+    for(let j = sessAppointment[i] % 3; j < 36; j = j + 3){
+        $("#" + (j + 1)).hide();
+    }
+
     $("#" + (sessAppointment[i] + 1)).next().show();
 }
 
@@ -57,6 +68,10 @@ $(".resBtn").click(function () {
 
     localStorage.setItem("appointment", JSON.stringify(locAppointment));
     sessionStorage.setItem("appointment", JSON.stringify(sessAppointment));
+
+    for (let i = id % 3; i < 36; i = i + 3) {
+        $("#" + (i + 1)).hide();
+    }
 });
 
 let typeArr = ["yoga", "pilates", "core", "cardio"];
